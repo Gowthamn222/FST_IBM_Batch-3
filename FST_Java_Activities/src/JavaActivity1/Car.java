@@ -2,20 +2,20 @@ package JavaActivity1;
 
 public class Car {
 
-	// Class Member Variables
+	
 	String color;
 	int make;
 	String transmission;
 	int tyres;
 	int doors;
 
-	// Constructor
+	
 	Car() {
 		tyres = 4;
 		doors = 4;
 	}
 
-	// Class Methods
+	
 	public void displayCharacterstics() {
 		System.out.println("Color of the Car: " + color);
 		System.out.println("Make of the Car: " + make);
