@@ -23,16 +23,12 @@ public class Activity1_2 {
 
 	@BeforeClass
 	public void beforeClass() throws MalformedURLException {
-		// Set the Desired Capabilities
 		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setCapability("deviceId", "84ea96b6");
-		caps.setCapability("deviceName", "samsung SM-J810G");
-		caps.setCapability("platformName", "Android");
+		caps.setCapability("deviceId", "95aw85c7");
+	        caps.setCapability("deviceName", "samsung SM-J810G");	                caps.setCapability("platformName", "Android");
 		caps.setCapability("appPackage", "com.google.android.keep");
 		caps.setCapability("appActivity", ".activities.BrowseActivity");
 		caps.setCapability("noReset", true);
-
-		// Instantiate Appium Driver
 		URL appServer = new URL("http://0.0.0.0:4723/wd/hub");
 		driver = new AndroidDriver<MobileElement>(appServer, caps);
 	}

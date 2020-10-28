@@ -21,10 +21,8 @@ public class Activity2_2 {
 
 	AppiumDriver<MobileElement> driver = null;
 	WebDriverWait wait;
-
 	@BeforeClass
 	public void beforeClass() throws MalformedURLException {
-		// Set the Desired Capabilities
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("deviceId", "84ea96b6");
 		caps.setCapability("deviceName", "samsung SM-J810G");
@@ -32,8 +30,6 @@ public class Activity2_2 {
 		caps.setCapability("appPackage", "com.android.chrome");
 		caps.setCapability("appActivity", "com.google.android.apps.chrome.Main");
 		caps.setCapability("noReset", true);
-
-		// Instantiate Appium Driver
 		URL appServer = new URL("http://0.0.0.0:4723/wd/hub");
 		driver = new AndroidDriver<MobileElement>(appServer, caps);
 		wait = new WebDriverWait(driver, 5);
